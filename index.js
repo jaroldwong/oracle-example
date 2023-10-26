@@ -3,7 +3,7 @@ const oracledb = require('oracledb');
 
 (async () => {
     oracledb.initOracleClient({
-        libDir: process.env.PWD + '/lib/instantclient_19_8',
+        libDir: process.env.PWD + '/lib/instantclient',
     })
 
     const connection = await oracledb.getConnection({
