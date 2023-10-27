@@ -1,6 +1,7 @@
 FROM node:20-alpine
 
-RUN apk add --no-cache libaio libc6-compat
+RUN apk update && \
+    apk add --no-cache libaio libc6-compat
 
 WORKDIR /usr/src/app/lib
 
